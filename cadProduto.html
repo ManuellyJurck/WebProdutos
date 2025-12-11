@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+
+<head>
+<meta charset="UTF-8">
+<title>Produtos</title>
+</head>
+
+<body>
+
+<h2>Cadastro de Produto</h2>
+
+<form action="cadProduto" method="post">
+  <label for="fname">Nome Produto</label>
+  <input type="text" id="fname" name="nome" placeholder="Disjuntor Bipolar..">
+
+  <label for="iquantidade">Quantidade</label>
+  <input type="text" id="iquantidade" name="nquantidade" placeholder="20">
+  
+  <label for="iidentificacao">Identificação</label>
+  <input type="text" id="iidentificacao" name="nidentificacao" placeholder="111225">
+  
+   <label for="ivalor">Valor</label>
+  <input type="text" id="ivalor" name="nvalor" placeholder="350,00">
+  
+    <label for="idisponivel">Disponível</label>
+  <input type="text" id="idisponivel" name="ndisponivel" placeholder="S">
+
+  <label for="country">Marca</label>
+  <select id="imarca" name="nmarca">
+    <option value="4">WEG</option>
+   <!-- <option value="2">ABB</option> -->
+   <!-- <option value="3">SIEMENS</option> -->
+  </select>
+  
+  <input type="submit" value="CADASTRAR">
+</form>
+
+</body>
+</html>
+
+
